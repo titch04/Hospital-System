@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef2f7;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 { font-size: 42px; margin-bottom: 20px; color: green; }
+        p { font-size: 20px; margin-bottom: 40px; }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        #bookAgain {background-color: blue;}
+        #bookAgain:hover {background-color: darkblue;}
+        #logout {background-color: grey;}
+        #logout:hover {background-color: darkgrey;}
+    </style>
+</head>
+<body>
+
+    <h1>Thank you</h1>
+    <p> Your booking has been submitted</p>
+
+    <button id="bookAgain" onclick="goToBooking()">Book Another Appointment</button>
+    <button id="logout" onclick="goToLogin()">Log Out</button>
+
+    <script>
+        function goToBooking() {
+            window.location.href = "booking.html";
+        }
+        function goToLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

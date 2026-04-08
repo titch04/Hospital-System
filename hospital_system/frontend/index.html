@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital System Home</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef3f7;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 { font-size: 42px; margin-bottom: 50px;}
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+        #booking {background-color: green;}
+        #portal {background-color: blue;}
+        #calendar {background-color: purple;}
+        #logout {background-color: grey;}
+        button:hover {opacity: 0.8;}
+    </style>
+</head>
+<body>
+<h1>Welcome to the Hostipal Home page</h1>
+
+<button id="booking" onclick="goToBooking()">Book Appointment</button>
+<button id="portal" onclick="goToPortal()">Patient Portal</button>
+<button id="calendar" onclick="goToCalendar()">Doctor Calendar</button>
+<button id="logout" onclick="logout()">Log Out</button>
+
+<script>
+    function goToBooking() {window.location.href = "booking.html";}
+    function goToPortal() {window.location.href = "portal.html";}
+    function goToCalendar() { window.location.href = "calendar.html";}
+    function logout() { window.location.href = "login.html";}
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Availability Calendar</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f6f8;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .booked {background-color: #ff4d4d; color: white;}
+        .free { background-color: #4CAF50; color: white;}
+
+        button {
+            margin: 20px 10px;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            background-color: grey;
+        }
+        button:hover { background-color: darkgrey;}
+    </style>
+</head>
+<body>
+
+<h1>Doctor Availability Calendar</h1>
+<p>Green = available, Red = booked</p>
+
+<table>
+    <tr>
+        <th>Doctor</th>
+        <th>9:00</th>
+        <th>10:00</th>
+        <th>11:00</th>
+        <th>12:00</th>
+        <th>13:00</th>
+        <th>14:00</th>
+    </tr>
+    <tr>
+        <td>Dr. Watson</td>
+        <td class="free">Free</td>
+        <td class="free">Free</td>
+        <td class="free">Free</td>
+        <td class="booked">Booked</td>
+        <td class="booked">Booked</td>
+        <td class="booked">Booked</td>
+    </tr>
+
+    <tr>
+        <td>Dr. Josheph</td>
+        <td class="booked">Booked</td>
+        <td class="free">Free</td>
+        <td class="free">Free</td>
+        <td class="booked">Booked</td>
+        <td class="booked">Booked</td>
+        <td class="free">Free</td>
+    </tr>
+
+    <tr>
+        <td>Dr. Alan</td>
+        <td class="free">Free</td>
+        <td class="free">Free</td>
+        <td class="free">Free</td>
+        <td class="booked">Booked</td>
+        <td class="booked">Booked</td>
+        <td class="booked">Booked</td>
+    </tr>
+</table>
+
+<button onclick="goHome()">Back to Home</button>
+<button onclick="goPortal()">Go to Patient Portal</button>
+
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+    function goPortal() {
+        window.location.href = "portal.html";
+    }
+
+</script>
+</body>
+</html>

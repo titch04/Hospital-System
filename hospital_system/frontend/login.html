@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login System</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef2f7;
+            text-align: center;
+            padding-top: 150px;
+        }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        input {
+            padding: 12px;
+            margin: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: green;
+            color: white;
+        }
+        button:hover { opacity: 0.8;}
+    </style>
+</head>
+
+<body>
+
+<h1>Login</h1>
+<input type="text" placeholder="Enter username" id="username"><br>
+<input type="password" placeholder="Enter password" id="password"><br>
+
+<button onclick="login()">Login</button>
+
+<script>
+    function login() {
+        let user = document.getElementById("username").value;
+        if(user === "") {
+            alert("Please enter a username");
+            return;
+        }
+        window.location.href = "index.html";
+    }
+</script>
+</body>
+</html>

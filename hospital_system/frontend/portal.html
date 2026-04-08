@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Portal</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef3f7;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        button {
+            margin: 20px 10px;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        #home { background-color: green;}
+        #home:hover { background-color: darkgreen;}
+
+        #calendar { background-color: violet;}
+        #calendar:hover { background-color:darkviolet;}
+    </style>
+</head>
+
+<body>
+<h1>Patient Portal</h1>
+<p>Welcome back, <strong>Jordan</strong></p>
+
+<h2>Personal Information</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>NHS Number</th>
+    </tr>
+    <tr>
+        <td>Jordan Smith</td>
+        <td>08/25/2007</td>
+        <td>123 456 7890</td>
+    </tr>
+</table>
+
+<h2>Your Appointments</h2>
+
+<table>
+    <tr>
+        <th>Doctor</th>
+        <th>Date</th>
+        <th>Time</th>
+    </tr>
+
+    <tr>
+        <td>Dr. Watson - Dermatologist</td>
+        <td>2026-05-03</td>
+        <td>09:00</td>
+    </tr>
+</table>
+
+<h2>Medical Records</h2>
+
+<table>
+    <tr>
+        <th>Condition</th>
+        <th>Diagnosis Date</th>
+        <th>Status</th>
+    </tr>
+
+    <tr>
+        <td>Cystic Acne</td>
+        <td>2020</td>
+        <td>Resolved</td>
+    </tr>
+
+    <tr>
+        <td>Broken Collar Bone</td>
+        <td> 2024</td>
+        <td>Resolved</td>
+    </tr>
+</table>
+
+<button id="home" onclick="goHome()">Back to Home</button>
+<button id="calendar" onclick="goCalendar()">View Doctor Availability</button>
+
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+
+    function goCalendar() {
+        window.location.href = "calendar.html";
+    }
+</script>
+</body>
+</html>
